@@ -22,13 +22,11 @@ class VotingMachine:
 
       def getTotalrepvotes(self):
           return self.rep 
-
+#create objects and use methods
 myVotingMachine=VotingMachine()
-
 myVotingMachine.voteDemocrat()
 myVotingMachine.voteDemocrat()
 myVotingMachine.voteDemocrat()
 myVotingMachine.voteRepublican()
-
 print(myVotingMachine.getTotaldemovotes() )
 print(myVotingMachine.getTotalrepvotes() )
