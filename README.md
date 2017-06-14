@@ -1,32 +1,33 @@
 # Voting-machine
-#Simulates voting and how voters are counted for each party 
+#Simulates voting and how voters are counted for each party in an election.
 
 class VotingMachine:
 
       def  __init__(self):
-           self.demo=0
-           self.rep=0
+           self.conservative=0
+           self.labour=0
        
-      def voteDemocrat(self):
-          self.demo = self.demo + 1
+      def voteConservative(self):
+           self.conservative=    self.conservative +  1
 
-      def voteRepublican(self):
-          self.rep = self.rep + 1
+      def voteLabour(self):
+         self.labour = self.labour + 1
 
       def clearVotes(self):
-          self.rep = 0
-          self.demo =0
-
+           self.conservative==0
+           self.labour==0
+           
+           
+      def unDoVote_Labour(self):
+          if( self.labour > 0):
+              self.labour= self.labour - 1
+             
+      def unDoVote(self):
+          if(self.conservative > 0):
+             self.conservative=self.conservative -1
+                
       def getTotaldemovotes(self):
           return self.demo
 
       def getTotalrepvotes(self):
           return self.rep 
-#create objects and use methods
-myVotingMachine=VotingMachine()
-myVotingMachine.voteDemocrat()
-myVotingMachine.voteDemocrat()
-myVotingMachine.voteDemocrat()
-myVotingMachine.voteRepublican()
-print(myVotingMachine.getTotaldemovotes() )
-print(myVotingMachine.getTotalrepvotes() )
