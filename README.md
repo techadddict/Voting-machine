@@ -22,12 +22,12 @@ class VotingMachine:
           if( self.labour > 0):
               self.labour= self.labour - 1
              
-      def unDoVote(self):
+      def unDoVote_Conservative(self):
           if(self.conservative > 0):
-             self.conservative=self.conservative -1
+             self.conservative = self.conservative -1
                 
-      def getTotaldemovotes(self):
-          return self.demo
+      def getTotalConservativesVotes(self):
+          return   self.conservative
 
-      def getTotalrepvotes(self):
-          return self.rep 
+      def getTotalLabourVotes(self):
+          return  self.labour 
